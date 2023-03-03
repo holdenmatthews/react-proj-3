@@ -31,7 +31,7 @@ const HomeScreen = () => {
     return title.includes(searchInput)
   })
     .map((recipe, index) => {
-      return <RecipeCard recipe={recipe} />
+      return <RecipeCard recipe={recipe} key={recipe.recipe_id}/>
     })
 
   return (

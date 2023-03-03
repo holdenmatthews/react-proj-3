@@ -15,18 +15,19 @@ const NewRecipeScreen = () => {
   }
 
   const initialValues = {
-    type: "",
-    recipeName: "",
-    imageURL: "",
-    prepTime: "",
     cookTime: "",
-    serves: "",
-    ingredients: [],
+    imageURL: "",
     instructions: "",
+    prepTime: "",
+    recipeName: "",
+    serves: "",
+    type: "",
+    ingredients: [],
   };
 
   const onSubmit = (values) => {
     values.ingredients = ingredients
+    console.log(values)
 
     axios
       .post('https://recipes.devmountain.com/recipes', values)
@@ -68,15 +69,15 @@ const NewRecipeScreen = () => {
             </div>
             <div className="radio-container">
               <span>
-                <input type="radio" onChange={handleChange} name="cook" />
+                <input type="radio" onChange={handleChange} name="type" value="Cook"/>
                 <h5>Cook</h5>
               </span>
               <span>
-                <input type="radio" onChange={handleChange} name="bake" />
+                <input type="radio" onChange={handleChange} name="type" value="Bake"/>
                 <h5>Bake</h5>
               </span>
               <span>
-                <input type="radio" onChange={handleChange} name="drink" />
+                <input type="radio" onChange={handleChange} name="type" value="Drink"/>
                 <h5>Drink</h5>
               </span>
             </div>
