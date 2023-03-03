@@ -1,0 +1,118 @@
+.form {
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 20px;
+    gap: 10px;
+    margin-bottom: 150px;
+}
+
+.form input[type="text"] {
+    min-height: 20px;
+}
+
+.tell-us {
+    color: black;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.little-input {
+    width: 25%;
+}
+
+.little-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.medium-input {
+    width: 40%;
+}
+
+.top-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.ing-quantity {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.ing-quantity input {
+    width: 100%;
+}
+
+.ing-qua-list {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    gap: 40px;
+}
+
+.blue-btn {
+    background-color: rgb(107, 170, 170);
+    color: white;
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.blue-btn:hover {
+    background-color: rgb(64, 114, 114);
+    transition: all 0.3s ease-in-out;
+}
+
+.orange-btn {
+    background-color:rgb(255, 143, 52);
+    color: white;
+    font-size: 14px;
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 2px;
+}
+
+.orange-btn:hover {
+    background-color:rgb(194, 108, 37);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 5px;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 75px;
+}
